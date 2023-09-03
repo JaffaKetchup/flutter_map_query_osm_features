@@ -1,13 +1,15 @@
 name: flutter_map_query_osm_features
 description: Plugin for flutter_map that uses the Overpass API and OSM API to query features within a point's radius
 version: 0.0.1
-homepage:
+
+repository: https://github.com/JaffaKetchup/flutter_map_query_osm_features
+issue_tracker: https://github.com/JaffaKetchup/flutter_map_query_osm_features/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
   flutter: ">=3.10.0"
 
 dependencies:
-  collection: ^1.18.0
+  collection:
   http: ^1.1.0
   latlong2: ^0.9.0

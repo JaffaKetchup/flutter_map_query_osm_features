@@ -249,7 +249,8 @@ class _MainScreenState extends State<MainScreen> {
                             return MouseRegion(
                               onEnter: switch (enclosed) {
                                 FullWay() => (_) => setState(
-                                    () => hoveredWay = enclosed.coords),
+                                      () => hoveredWay = enclosed.coords,
+                                    ),
                                 PartialWay() => (_) {
                                     final bounds = LatLngBounds(
                                       enclosed.bounds.$1,
@@ -313,7 +314,8 @@ class _MainScreenState extends State<MainScreen> {
                                             osmEnclosed!.toList();
                                         final index =
                                             osmEnclosedList.indexWhere(
-                                                (e) => e.id == enclosed.id);
+                                          (e) => e.id == enclosed.id,
+                                        );
                                         osmEnclosedList
                                           ..removeAt(index)
                                           ..insert(
